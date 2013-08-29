@@ -1,13 +1,11 @@
-UI Sample 1
+UI Example 1
 ====
 
-Based primarily on Yahoo's [http://purecss.io/][Pure] CSS modules.
+This is a simple email client UI. Based primarily on Yahoo's Pure CSS modules.
 
 
 Outline
 --------
-
-This is a simple email client UI.
 
 * A basic responsive grid.
 
@@ -19,7 +17,7 @@ This is a simple email client UI.
 
 * No form styles in this example.
 
-* Extremely small production CSS file size: **< 4KB minified + gzipped**.
+* Extremely small production CSS file size: < 4KB minified + gzipped.
 
 
 Build
