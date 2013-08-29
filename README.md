@@ -4,31 +4,22 @@ UI Sample 1
 Based primarily on Yahoo's [http://purecss.io/][Pure] CSS modules.
 
 
-Pure Features
+Outline
 --------
 
-Pure is meant to be a starting point for every website or web app. We take care
-of all the CSS work that every site needs, without making it look cookie-cutter:
+This is a simple email client UI.
 
-* A responsive grid that can be customized to your needs.
+* A basic responsive grid.
 
-* A solid base built on [Normalize.css][] to fix cross-browser compatibility
-  issues.
+* Built on Normalize.css to level most cross-browser issues.
 
 * Consistently styled buttons that work with `<a>` and `<button>` elements.
 
-* Styles for vertical and horizontal menus, including support for dropdown
-  menus.
-
-* Useful form alignments that look great on all screen sizes.
-
-* Various common table styles.
-
-* An extremely minimalist look that is super-easy to customize.
-
 * Responsive by default, with a non-responsive option.
 
-* Extremely small file size: **4.3KB minified + gzip**.
+* No form styles in this example.
+
+* Extremely small production CSS file size: **< 4KB minified + gzipped**.
 
 
 Build
@@ -43,7 +34,7 @@ $ grunt
 
 ### Build Files
 
-Grunt will put everything into the `project/build/` directory. The naming
+Grunt will put everything into the `pure/build/` directory. The naming
 conventions of the files in the `build/` directory follow these rules:
 
 * `[module]-core.css`: The minimal set of styles, ususally structural, that
