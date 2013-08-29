@@ -15,9 +15,7 @@ Outline
 
 * Responsive by default, with a non-responsive option.
 
-* No form styles in this example.
-
-* Extremely small production CSS file size: < 4KB minified + gzipped.
+* Extremely small production CSS file size: 4.3KB minified + gzipped.
 
 
 Build
