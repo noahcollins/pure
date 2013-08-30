@@ -1,7 +1,7 @@
 UI Example 1
 ====
 
-This is a simple email client UI. Based primarily on Yahoo's Pure CSS modules.
+A simple project that represents an email client. Based primarily on Yahoo's Pure CSS modules.
 
 
 Notes
@@ -10,8 +10,6 @@ Notes
 * A basic responsive grid.
 
 * Built on Normalize.css to level common cross-browser issues.
-
-* Consistently styled buttons that work with `<a>` and `<button>` elements.
 
 * Extremely small production CSS file size: 4.3KB minified + gzipped.
 
@@ -30,11 +28,11 @@ $ grunt
 
 ### View the Example
 
-Open `pure/example.html` to view.
+Open `dist/index.html` to view.
 
 ### Build Files
 
-Grunt will put everything into the `pure/build/` directory. The naming
+Grunt will put the built CSS modules into the `pure/build/` directory. The naming
 conventions of the files in the `build/` directory follow these rules:
 
 * `[module]-core.css`: The minimal set of styles, ususally structural, that
