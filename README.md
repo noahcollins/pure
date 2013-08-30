@@ -4,18 +4,18 @@ UI Example 1
 This is a simple email client UI. Based primarily on Yahoo's Pure CSS modules.
 
 
-Outline
+Notes
 --------
 
 * A basic responsive grid.
 
-* Built on Normalize.css to level most cross-browser issues.
+* Built on Normalize.css to level common cross-browser issues.
 
 * Consistently styled buttons that work with `<a>` and `<button>` elements.
 
-* Responsive by default, with a non-responsive option.
-
 * Extremely small production CSS file size: 4.3KB minified + gzipped.
+
+* There are some non-abstracted classes. I use LESS mixins to keep production CSS lean & semantic while retaining source generality. Not used in this example.
 
 
 Build
@@ -27,6 +27,10 @@ $ cd pure
 $ npm install
 $ grunt
 ```
+
+### View the Example
+
+Open `pure/example.html` to view.
 
 ### Build Files
 
