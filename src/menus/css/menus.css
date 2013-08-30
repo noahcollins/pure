@@ -1,12 +1,14 @@
-/*csslint adjoining-classes:false*/
+/*csslint adjoining-classes:false, ids:false, box-model:false, outline-none:false*/
 /*TODO: Remove this lint rule override after a refactor of this code.*/
 
 /* MAIN MENU STYLING */
 
+.pure-menu,
 .pure-menu.pure-menu-open,
 .pure-menu.pure-menu-horizontal li .pure-menu-children {
-    background: #fff; /* Old browsers */
-    border: 1px solid #b7b7b7;
+    background: transparent;
+    border: none;
+    text-align: left;
 }
 
 /* remove borders for horizontal menus */
@@ -22,12 +24,12 @@
     border: 1px solid transparent;
     border-left: none;
     border-right: none;
-
+    margin-left: 0.5em;
 }
 
 .pure-menu a,
 .pure-menu .pure-menu-can-have-children > li:after {
-    color: #777;
+    color: #fff;
 }
 
 .pure-menu .pure-menu-can-have-children > li:hover:after {
@@ -39,11 +41,11 @@
     background: #dedede;
 }
 
+    .pure-menu a:hover,
+    .pure-menu a:focus {
+        background: rgb(43, 47, 51);
+    }
 
-.pure-menu li a:hover,
-.pure-menu li a:focus {
-    background: #eee;
-}
 
 /* DISABLED STATES */
 .pure-menu li.pure-menu-disabled a:hover,
@@ -63,16 +65,22 @@
     color: #bfbfbf;
 }
 
+    .nav-menu-button {
+        display: none;
+    }
+
 /* HEADINGS */
 .pure-menu .pure-menu-heading {
     color: #565d64;
-    text-transform: uppercase;
     font-size: 90%;
     margin-top: 0.5em;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: #dfdfdf;
 }
+
+    .pure-menu-heading {
+        border-bottom: none;
+        color: rgb(145, 155, 166);
+        text-transform: uppercase;
+    }
 
 /* ACTIVE MENU ITEM */
 .pure-menu .pure-menu-selected a {
@@ -84,3 +92,46 @@
     border: none;
     border-bottom: 1px solid #b7b7b7;
 }
+
+/* LABELS AND TAGS */
+
+    .email-count {
+        color: rgb(145, 155, 166);
+    }
+
+    .email-label-personal,
+    .email-label-work,
+    .email-label-travel {
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        margin-right: 0.5em;
+        border-radius: 3px;
+    }
+    
+    .email-label-work {
+        background: #d409ef;
+    }
+    .email-label-personal {
+        background: #ffc73e;
+    }
+    .email-label-travel {
+        background: #40c54f;
+    }
+
+.post-category {
+    margin: 0 0.1em;
+    padding: 0.3em 1em;
+    color: #fff;
+    background: #999;
+    font-size: 80%;
+}
+    .post-category-work {
+        background: #d409ef;
+    }
+    .post-category-personal {
+        background: #f2be3a;
+    }
+    .post-category-travel {
+        background: #40c54f;
+    }

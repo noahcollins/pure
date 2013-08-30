@@ -1,4 +1,4 @@
-/*csslint regex-selectors:false*/
+/*csslint regex-selectors:false, ids:false, box-model:false, outline-none:false*/
 
 .pure-g {
     letter-spacing: -0.31em; /* Webkit: collapse white-space between units */
@@ -51,3 +51,126 @@ this the same font stack that Normalize.css sets for the `body`.
 .pure-g [class *= "pure-u"] {
     font-family: sans-serif;
 }
+
+body {
+    color: #333;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    font-family: "Lato", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #1b98f8;
+}
+
+/* Main Layout */
+#layout {
+    padding-left: 500px; /* "left col (nav + list)" width */
+    position: relative;
+}
+
+#nav, #list {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+}
+#nav {
+    margin-left: -500px; /* "left col (nav + list)" width */
+    width:150px;
+    background: rgb(51, 55, 59);
+    text-align: center;
+    padding: 2em 0;
+}
+
+#list {
+    margin-left: -350px;
+    width: 350px;
+    border-right: 1px solid #ddd;
+}
+
+/* Helper Classes */
+.primary-button,
+.secondary-button {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.primary-button {
+    color: #fff;
+    background: #1b98f8;
+    margin: 1em 0;
+}
+.secondary-button {
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #666;
+    padding: 0.5em 2em;
+    font-size: 80%;
+}
+
+/* Email Item Styles */
+.email-item {
+    padding: 0.9em 1em;
+    border-bottom: 1px solid #ddd;
+    border-left: 6px solid transparent;
+}
+    .email-avatar {
+        border-radius: 3px;
+        margin-right: 0.5em;
+    }
+    .email-name,
+    .email-subject {
+        margin: 0;
+    }
+    .email-name {
+        text-transform: uppercase;
+        color: #999;
+    }
+    .email-desc {
+        font-size: 80%;
+        margin: 0.4em 0;
+    }
+
+.email-item-selected {
+    background: #eee;
+}
+.unread {
+    border-left: 6px solid #ccc;
+}
+.read {
+    color: #777;
+}
+
+/* Email Content Styles */
+.email-content-header, .email-content-body, .email-content-footer {
+    padding: 1em 2em;
+}
+    .email-content-header {
+        border-bottom: 1px solid #ddd;
+    }
+
+        .email-content-title {
+            margin: 0.5em 0 0;
+        }
+        .email-content-subtitle {
+            font-size: 1em;
+            margin: 0;
+            font-weight: normal;
+        }
+            .email-content-subtitle span {
+                color: #999;
+            }
+    .email-content-controls {
+        margin-top: 2em;
+        text-align: right;
+    }
+        .email-content-controls .secondary-button {
+            margin-bottom: 0.3em;
+        }

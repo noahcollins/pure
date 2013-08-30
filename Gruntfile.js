@@ -94,7 +94,7 @@ grunt.initConfig({
                     // 'build/forms.css',
                     'build/grids.css',
                     'build/menus.css',
-                    'build/tables.css'
+                    'build/tables.css',
                 ]},
 
                 {'build/<%= pkg.name %>-nr.css': [

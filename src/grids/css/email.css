@@ -1,4 +1,7 @@
-body {
+/*csslint ids:false, box-model:false, outline-none:false*/
+/*TODO: Remove this lint rule override after a refactor of this code.*/
+
+/*body {
     color: #333;
 }
 
@@ -13,11 +16,11 @@ textarea {
 a {
     text-decoration: none;
     color: #1b98f8;
-}
+}*/
 
 /* Main Layout */
-#layout {
-    padding-left: 500px; /* "left col (nav + list)" width */
+/*#layout {
+    padding-left: 500px;
     position: relative;
 }
 
@@ -28,7 +31,7 @@ a {
     overflow: auto;
 }
 #nav {
-    margin-left: -500px; /* "left col (nav + list)" width */
+    margin-left: -500px;  "left col (nav + list)" width 
     width:150px;
     background: rgb(51, 55, 59);
     text-align: center;
@@ -39,11 +42,11 @@ a {
     margin-left: -350px;
     width: 350px;
     border-right: 1px solid #ddd;
-}
+}*/
 
 
 /* Helper Classes */
-.primary-button,
+/*.primary-button,
 .secondary-button {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -61,33 +64,34 @@ a {
     padding: 0.5em 2em;
     font-size: 80%;
 }
-
+*/
 
 
 /* Vertical Navigation */
-#nav .pure-menu {
+
+/*.pure-menu {
     background: transparent;
     border: none;
     text-align: left;
-}
-    #nav .pure-menu a:hover,
-    #nav .pure-menu a:focus {
+}*/
+/*    .pure-menu a:hover,
+    .pure-menu a:focus {
         background: rgb(43, 47, 51);
-    }
-    #nav .pure-menu a {
+    }*/
+/*    .pure-menu a {
         color: #fff;
         margin-left: 0.5em;
-    }
-    #nav .pure-menu-heading {
+    }*/
+/*    .pure-menu-heading {
         border-bottom: none;
         color: rgb(145, 155, 166);
-    }
+    }*/
 
-    #nav .nav-menu-button {
+/*    .nav-menu-button {
         display: none;
-    }
+    }*/
 
-    .email-count {
+/*    .email-count {
         color: rgb(145, 155, 166);
     }
 
@@ -109,11 +113,11 @@ a {
     }
     .email-label-travel {
         background: #40c54f;
-    }
+    }*/
 
 
 /* Tags */
-.post-category {
+/*.post-category {
     margin: 0 0.1em;
     padding: 0.3em 1em;
     color: #fff;
@@ -130,10 +134,10 @@ a {
         background: #40c54f;
     }
 
-
+*/
 
 /* Email Item Styles */
-.email-item {
+/*.email-item {
     padding: 0.9em 1em;
     border-bottom: 1px solid #ddd;
     border-left: 6px solid transparent;
@@ -163,10 +167,10 @@ a {
 }
 .read {
     color: #777;
-}
+}*/
 
 /* Email Content Styles */
-.email-content-header, .email-content-body, .email-content-footer {
+/*.email-content-header, .email-content-body, .email-content-footer {
     padding: 1em 2em;
 }
     .email-content-header {
@@ -191,8 +195,8 @@ a {
         .email-content-controls .secondary-button {
             margin-bottom: 0.3em;
         }
-
-
+*/
+/*
 @media (max-width: 867px) {
 
     #list,
@@ -214,7 +218,7 @@ a {
         bottom: 0;
         left: 150px;
         overflow: auto;
-        width: auto; /* so that it's not 100% */
+        width: auto; 
     }
 }
 
@@ -252,4 +256,4 @@ a {
         width: 40px;
         height: 40px;
     }
-}
+}*/
