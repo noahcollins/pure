@@ -38,6 +38,11 @@ grunt.initConfig({
             }
         },
 
+        dist: {
+            src    : 'build/pure-min.css',
+            dest   : 'dist/css/main-min.css'
+        },
+
         normalize: {
             expand : true,
             flatten: true,
@@ -91,7 +96,8 @@ grunt.initConfig({
 
                 {'build/grids-nr.css': [
                     'build/grids-core.css',
-                    'build/grids-units.css'
+                    'build/grids-units.css',
+                    'build/email.css'
                 ]},
 
                 {'build/grids.css': [
@@ -265,6 +271,7 @@ grunt.registerTask('default', [
     'clean:build_res',
     'cssmin',
     'concat:all',
+    'copy:dist',
     'license'
 ]);
 
